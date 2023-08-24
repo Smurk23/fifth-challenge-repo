@@ -35,6 +35,17 @@ $(function () {
   function determinePastPresentFuture() {
     let scheduleHour = parseInt($(this).attr('id').split('-')[1]);
     console.log('scheduleHour = ', scheduleHour);
+
+    if (scheduleHour < timeNow) {
+      $(this).addClass('past');
+    } else if (scheduleHour === timeNow) {
+      $(this).removeClass('past');
+      $(this).addClass('present');
+    } else {
+      $(this).removeClass('past');
+      $(this).removeClass('present');
+      $(this).addClass('future');
+    }
   }
 
   let timeNow;
