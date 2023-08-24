@@ -39,6 +39,7 @@ $(function () {
   
   $('#hour-9 .description').val(localStorage.getItem('hour-9'));
   $('#hour-10 .description').val(localStorage.getItem('hour-10'));
+  $('#hour-11 .description').val(localStorage.getItem('hour-11'));
 
   // TODO: Add code to display the current date in the header of the page.
 });
