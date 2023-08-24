@@ -70,6 +70,7 @@ $(function () {
   $('#hour-14 .description').val(localStorage.getItem('hour-14'));
   $('#hour-15 .description').val(localStorage.getItem('hour-15'));
   $('#hour-16 .description').val(localStorage.getItem('hour-16'));
+  $('#hour-17 .description').val(localStorage.getItem('hour-17'));
 
   // TODO: Add code to display the current date in the header of the page.
 });
